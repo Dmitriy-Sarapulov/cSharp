@@ -28,14 +28,25 @@
 // }
 
 // Задача 6
+// Console.Write("Введите число: ");
+// int value  = Convert.ToInt32(Console.ReadLine());
+// if ((value % 2) == 0) {
+    // Console.Write("Данное число явяляется четным");
+// }
+// else{
+    // Console.Write("Данное число не является четным");
+// }
+//Задача 8
 Console.Write("Введите число: ");
-int value  = Convert.ToInt32(Console.ReadLine());
-if ((value % 2) == 0) {
-    Console.Write("Данное число явяляется четным");
-}
-else{
-    Console.Write("Данное число не является четным");
-}
+int q  = Convert.ToInt32(Console.ReadLine());
+ for (int i = 1; i <= q; i++) {
+    if (i % 2 == 0) {
+        Console.Write(i + " ");
+    }
+ }
+
+
+
 
 
 
