@@ -14,10 +14,25 @@
 
 // Задача 2 Программа которая выводит 3-ех значное число и удаляет из него вторую цифру и выводит число из двух оставшихся.
 
-int num = new Random().Next(100, 999);
-Console.WriteLine(num);
-int a = num / 100;
-int b = num / 10;
-int c = num % 10;
+// int num = new Random().Next(100, 999);
+// Console.WriteLine(num);
+// int a = num / 100;
+// // int b = num / 10; //не нужно было.
+// int c = num % 10;
 
-Console.WriteLine($"{a}{c}");
+// Console.WriteLine($"{a}{c}");
+
+//Задача 3 Программа, которая принимает на вход два числа и проверяет является ли второе число кратное первому,если число 2 не кратно числу 1 то вывести остаток от деления.
+
+Console.Write("Введите первое число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите Второе число: ");
+int b = Convert.ToInt32(Console.ReadLine());
+
+if (b % a == 0) {
+    Console.WriteLine("Второе число кратно первому");
+}
+else {
+    Console.WriteLine("Второе число не кратно первому, остаток от деления: " + b % a);
+}
+
