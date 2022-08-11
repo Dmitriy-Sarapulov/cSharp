@@ -19,12 +19,12 @@
 // }
 
 //Задача 13
-Console.Write("Введите число: ");
-int a = Convert.ToInt32(Console.ReadLine());
-string b = Convert.ToString(a);
-if (b.Length > 2) {
-    Console.WriteLine(b[2]);
-}
-else {
-    Console.WriteLine("Третья цифра отсутствует");
-}
+// Console.Write("Введите число: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// string b = Convert.ToString(a);
+// if (b.Length > 2) {
+//     Console.WriteLine(b[2]);
+// }
+// else {
+//     Console.WriteLine("Третья цифра отсутствует");
+// }
