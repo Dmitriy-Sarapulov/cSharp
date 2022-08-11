@@ -46,15 +46,16 @@
 //  }
 //Задача 5
 
-Console.Write("Введите отрицательное число: ");
-int o  = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите положительное число: ");
-int p  = Convert.ToInt32(Console.ReadLine());
- for (int i = o; i <= p; i++) {
-    if (i % 2 == 0) {
-        Console.Write(i + " ");
-    }
- }
+// Console.Write("Введите отрицательное число: ");
+// int o  = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите положительное число: ");
+// int p  = Convert.ToInt32(Console.ReadLine());
+//  for (int i = o; i <= p; i++) {
+//     if (i % 2 == 0) {
+//         Console.Write(i + " ");
+//     }
+//  }
+
 
 
 
