@@ -6,14 +6,25 @@
 // Console.WriteLine("Вторая цифра выбранного числа: " + a);
 
 //Задача 15
-Console.Write("Введите номер дня недели: ");
+// Console.Write("Введите номер дня недели: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// if (a >= 1 && a <= 5) {
+//     Console.WriteLine("Этот день не является выходным");
+// }
+// else if (a == 6 | a == 7) {
+//     Console.WriteLine("Этот день является выходным");
+// }
+// else {
+//     Console.WriteLine("Введено не верное число");
+// }
+
+//Задача 13
+Console.Write("Введите число: ");
 int a = Convert.ToInt32(Console.ReadLine());
-if (a >= 1 && a <= 5) {
-    Console.WriteLine("Этот день не является выходным");
-}
-else if (a == 6 | a == 7) {
-    Console.WriteLine("Этот день является выходным");
+string b = Convert.ToString(a);
+if (b.Length > 2) {
+    Console.WriteLine(b[2]);
 }
 else {
-    Console.WriteLine("Введено не верное число");
+    Console.WriteLine("Третья цифра отсутствует");
 }
