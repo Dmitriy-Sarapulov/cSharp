@@ -50,21 +50,21 @@
 
 // Задача 5 Программа принимает 2 числа и проверяет, является одно число квадратом другого.
 
-Console.Write("Введите первое число: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите второе число: ");
-int b = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите первое число: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите второе число: ");
+// int b = Convert.ToInt32(Console.ReadLine());
 
-if (a == b * b) {
-    Console.WriteLine("Первое число является квадратом Второго");
-}
-else {
-    Console.WriteLine("Первое число не является квадратом Второго");
-}
-if (b == a * a) {
-    Console.WriteLine("Второе число является квадратом Первого");
-}
-else {
-    Console.WriteLine("Второе число не является квадратом Первого");
-}
+// if (a == b * b) {
+//     Console.WriteLine("Первое число является квадратом Второго");
+// }
+// else {
+//     Console.WriteLine("Первое число не является квадратом Второго");
+// }
+// if (b == a * a) {
+//     Console.WriteLine("Второе число является квадратом Первого");
+// }
+// else {
+//     Console.WriteLine("Второе число не является квадратом Первого");
+// }
 
