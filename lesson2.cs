@@ -24,15 +24,26 @@
 
 //Задача 3 Программа, которая принимает на вход два числа и проверяет является ли второе число кратное первому,если число 2 не кратно числу 1 то вывести остаток от деления.
 
-Console.Write("Введите первое число: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите Второе число: ");
-int b = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите первое число: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите Второе число: ");
+// int b = Convert.ToInt32(Console.ReadLine());
 
-if (b % a == 0) {
-    Console.WriteLine("Второе число кратно первому");
-}
-else {
-    Console.WriteLine("Второе число не кратно первому, остаток от деления: " + b % a);
-}
+// if (b % a == 0) {
+//     Console.WriteLine("Второе число кратно первому");
+// }
+// else {
+//     Console.WriteLine("Второе число не кратно первому, остаток от деления: " + b % a);
+// }
 
+//Задача 4 Программа, которая принимает на вход одно число и проверяет, кратно ли оно одновременно 7 и 23.
+
+// Console.Write("Введите число: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+
+// if (a % 7 == 0 && a % 23 == 0) {
+//     Console.WriteLine("Условие выполняется");
+// }
+// else {
+//     Console.WriteLine("Условие не выполняется");
+// }
