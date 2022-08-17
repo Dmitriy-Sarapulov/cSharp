@@ -32,3 +32,11 @@
 // Console.WriteLine($"d={d:f2}");
 
 //Задача 23
+
+// Console.Write("Введите число: ");
+// int a = int.Parse(Console.ReadLine());
+// int cub = 1;
+// for(int i = 1; i <= a; i++) {
+//     cub = i * i * i;
+//     Console.Write(cub + " ");
+// }
