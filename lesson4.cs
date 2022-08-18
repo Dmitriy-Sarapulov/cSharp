@@ -32,21 +32,27 @@
 
 // Программа которая принимает на вход число N и выдает произведение чисел от 1 до N
 
-int GetSumNums(int number) {
-    int sum = 1;
-    for(int i = 1;i <= number; i++) {
-        sum *= i;
-    }
-    return sum;
-}
+// int GetSumNums(int number) {
+//     int sum = 1;
+//     for(int i = 1;i <= number; i++) {
+//         sum *= i;
+//     }
+//     return sum;
+// }
 
-Console.Clear();
-Console.Write("Введите число: ");
-int num = int.Parse(Console.ReadLine());
-Console.WriteLine($"Сумма цифр = {GetSumNums(num)}");
-
-
-
-
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int num = int.Parse(Console.ReadLine());
+// Console.WriteLine($"Сумма цифр = {GetSumNums(num)}");
 
 // Программа которая выводит массив из 8 элементов,заполненный нулями и единицами в случайном порядке.
+
+// int[] arr = new int[8];
+// Random rnd = new Random();
+
+//  for(int i = 0; i < arr.Length; i++) {
+//     arr[i] = rnd.Next(0,2);
+//     Console.Write(arr[i] + " ");
+//  }
+
+
