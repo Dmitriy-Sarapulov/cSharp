@@ -2,31 +2,69 @@
 
 // Функция создания и вывода массива, наполненного случайными числами.
 
-int[] CreateRandomArray(int N, int start, int end)
-{
-    int[] RandomArray = new int[N];
-    for (int i = 0; i < N; i++)
-    {
-        RandomArray[i] = new Random().Next(start, end + 1);
-    }
-    return RandomArray;
-}
+// int[] CreateRandomArray(int N, int start, int end)
+// {
+//     int[] RandomArray = new int[N];
+//     for (int i = 0; i < N; i++)
+//     {
+//         RandomArray[i] = new Random().Next(start, end + 1);
+//     }
+//     return RandomArray;
+// }
 
-int[] CreateArray() //Создание массива
+// int[] CreateArray() //Создание массива
+// {
+//     Console.WriteLine("Введите количество элементов массива");
+//     int size = Convert.ToInt32(Console.ReadLine());
+//     int[] RandomArray = new int[size];
+//     for (int i = 0; i < size; i++)
+//     {   
+//         Console.WriteLine($"Введите {i+1} элемент массива");
+//         RandomArray[i] = Convert.ToInt32(Console.ReadLine());
+//     }
+//     return RandomArray;
+// }
+
+// void ShowArray(int[] array) // Вывод массива
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + " ");
+//     }
+//     Console.WriteLine();
+// }
+
+// Console.Clear();
+// Console.WriteLine("Введите количество элементов в массиве");
+// int num = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите первое число случайно генерируемого диапазона");
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите последнее число случайно генерируемого диапазона");
+// int max = Convert.ToInt32(Console.ReadLine());
+
+// int[] myRandomArray = CreateRandomArray(num, min, max);
+// ShowArray(myRandomArray);
+// Console.WriteLine("-------");
+// int[] myArray = CreateArray();
+// ShowArray(myArray);
+
+//Задайте массив из 12 элементов, заполненный случайными числами из промежутка [-9, 9]. Найдите сумму отрицательных и положительных элементов массива.
+// Например, в массиве [3,9,-8,1,0,-7,2,-1,8,-3,-1,6] сумма положительных чисел равна 29, сумма отрицательных равна -20.
+
+
+int[] CreateRandomArray(int size, int min, int max)
 {
-    Console.WriteLine("Введите количество элементов массива");
-    int size = Convert.ToInt32(Console.ReadLine());
-    int[] RandomArray = new int[size];
+    int[] array = new int[size];
     for (int i = 0; i < size; i++)
-    {   
-        Console.WriteLine($"Введите {i+1} элемент массива");
-        RandomArray[i] = Convert.ToInt32(Console.ReadLine());
+    {
+        array[i] = new Random().Next(min, max + 1);
     }
-    return RandomArray;
+    return array;
 }
 
-void ShowArray(int[] array) // Вывод массива
+void ShowArray(int[] array)
 {
+
     for (int i = 0; i < array.Length; i++)
     {
         Console.Write(array[i] + " ");
@@ -34,16 +72,19 @@ void ShowArray(int[] array) // Вывод массива
     Console.WriteLine();
 }
 
-Console.Clear();
-Console.WriteLine("Введите количество элементов в массиве");
-int num = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите первое число случайно генерируемого диапазона");
-int min = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите последнее число случайно генерируемого диапазона");
-int max = Convert.ToInt32(Console.ReadLine());
-
-int[] myRandomArray = CreateRandomArray(num, min, max);
-ShowArray(myRandomArray);
-Console.WriteLine("-------");
-int[] myArray = CreateArray();
+int[] myArray = CreateRandomArray(12, -9, 9);
 ShowArray(myArray);
+
+int sum_pos = 0;
+int sum_neg = 0;
+
+for (int i = 0; i < myArray.Length; i++)
+{
+    if (myArray[i] > 0)
+        sum_pos += myArray[i];
+    else
+        sum_neg += myArray[i];
+}
+
+Console.WriteLine($"Сумма положительных: {sum_pos}. Сумма отрицательных: {sum_neg}");
+
