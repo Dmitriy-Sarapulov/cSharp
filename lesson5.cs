@@ -9,6 +9,7 @@ int[] CreateRandomArray(int N, int start, int end)
     {
         RandomArray[i] = new Random().Next(start, end + 1);
     }
+    return RandomArray;
 }
 
 int[] CreateArray() //Создание массива
