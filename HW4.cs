@@ -7,3 +7,25 @@
 // double b = Convert.ToDouble(Console.ReadLine());
 // double step = Math.Pow(a,b);
 // Console.WriteLine(step);
+
+// Задача 26:
+
+// Console.Write("Введите число: ");
+// int a = int.Parse(Console.ReadLine());
+// int sum = 0;
+//     if (a < 0)
+//     {
+//         a=a*-1;
+//     }
+//     string b = Convert.ToString(a);   
+    
+//     for(int i = 0; i < b.Length; i++ ) {
+//         string num = Convert.ToString(b[i]);
+//         sum = sum + Convert.ToInt32(num);
+        
+
+//     }
+// Console.WriteLine(sum);
+
+//Задача 29
+
