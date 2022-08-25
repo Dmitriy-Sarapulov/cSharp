@@ -48,7 +48,7 @@
 // double[] arr = new double[a];
 // Random rand = new Random();
 // for(int i = 0; i < arr.Length; i++) {
-//     arr[i] = rand.Next(0, 99);
+//     arr[i] = rand.Next(0, 100);
 //     Console.Write(arr[i] + " ");
 // }
 // Console.WriteLine();
