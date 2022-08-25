@@ -40,3 +40,26 @@
 //     }
 // }
 // Console.WriteLine(chet);
+
+//Задача 38
+// Console.Write("Введите размер массива: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+
+// double[] arr = new double[a];
+// Random rand = new Random();
+// for(int i = 0; i < arr.Length; i++) {
+//     arr[i] = rand.Next(0, 99);
+//     Console.Write(arr[i] + " ");
+// }
+// Console.WriteLine();
+// double min = arr[0];
+// double max = arr[0];
+// for(int i = 0; i < arr.Length; i++){
+//     if(min > arr[i]) {
+//         min = arr[i];
+//     }
+//     if(max < arr[i]) {
+//         max = arr[i];
+//     }
+// }
+// Console.WriteLine(max-min);
