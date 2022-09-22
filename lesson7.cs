@@ -26,4 +26,11 @@
 //     }
 // }
 
+// int Prompt(string message)
+// {
+//     Console.Write(message);                             //Вывести сообщение
+//     int result = Convert.ToInt32(Console.ReadLine());   //Считывает значение
+//     return result;                                      //Возвращает результат
+// }
+
 
